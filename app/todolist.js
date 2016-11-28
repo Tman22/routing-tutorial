@@ -14,7 +14,9 @@ class ToDoList extends Component {
       <div>
         <header>ToDoList</header>
         <ul>
-          <li>Can you make a list of todo's links here?</li>
+        {todos.map(todo =>
+          <li key={todo.ref}><Link to={'/todolist/'+ todo.ref}>{todo.title}</Link></li>)
+        }
         </ul>
       </div>
     )

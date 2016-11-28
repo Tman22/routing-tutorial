@@ -6,6 +6,7 @@ class App extends Component {
     return (
       <div>
         <h1>Lists on Lists</h1>
+        <nav> </nav>
         <ul>
           <li><Link to='/articles' style={{ color: 'blue', background:'gray' }}
                       activeStyle={{ color: 'red'}} >Articles</Link></li>
@@ -14,7 +15,10 @@ class App extends Component {
           <li><Link to='/home' style={{ color: 'blue', background:'gray' }}
                       activeStyle={{ color: 'red'}} >Home</Link></li>
         </ul>
-        {this.props.children}
+        <div className="child-Components">
+          {this.props.children}
+        </div>
+        <div className='footer'>Footer</div>
       </div>
     )
   }

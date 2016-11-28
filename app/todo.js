@@ -10,12 +10,15 @@ const todos = [
 class ToDo extends Component {
 
   render() {
-    // console.log(this.props)
-    // console.log(this.props.params)
-    // does this.props.params have anything you could reference to get the todo?
+    let object = todos.filter(todos => {
+      return todos.ref === parseInt(this.props.params.todoID)
+    })
+    let {title, body} = object[0]
     return (
       <div>
-        well now.
+        <h2><Link to='/todolist' style={{ color: 'blue', background:'gray' }}
+                      activeStyle={{ color: 'red'}} >ToDoList</Link> > {title}</h2>
+        <h3>{body}</h3>
       </div>
     )
   }

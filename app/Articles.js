@@ -11,7 +11,6 @@ class Articles extends Component {
 
   render() {
     console.log(this.props.params)
-    console.log(articles)
     return (
       <div>
         <header>Articles</header>

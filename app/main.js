@@ -16,9 +16,13 @@ ReactDOM.render(
     <Route path="/" component={App} >
       <IndexRedirect to='/home' component={Home} />
       <Route path="/home" component={Home} />
-      <Route path='articles' >
+      <Route path='articles'>
         <IndexRoute component={Articles} />
         <Route path=':name' component={Article} />
+      </Route>
+      <Route path='todolist'>
+        <IndexRoute component={ToDoList} />
+        <Route path=':todoID' component={ToDo} />
       </Route>
     </Route>
   </Router>
