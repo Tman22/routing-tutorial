@@ -14,7 +14,7 @@ import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, IndexRedi
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={App} >
-      <IndexRedirect component={Home} />
+      <IndexRedirect to='/home' component={Home} />
       <Route path="/home" component={Home} />
       <Route path='articles' >
         <IndexRoute component={Articles} />
