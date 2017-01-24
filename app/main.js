@@ -10,5 +10,15 @@ import { PageNotFound } from './components/pageNotFound';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, IndexRedirect } from 'react-router';
 
 
-ReactDOM.render(<App />
+ReactDOM.render(
+  <Router history={browserHistory}>
+    <Route path="/" component={App} >
+      <IndexRedirect to='/home' component={Home} />
+      <Route path="/home" component={Home} />
+      <Route path='articles'>
+        <IndexRoute component={Articles} />
+        <Route path=':name' component={Article} />
+      </Route>
+    </Route>
+  </Router>
 , document.getElementById('root'));

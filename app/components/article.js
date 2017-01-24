@@ -13,15 +13,16 @@ class Article extends Component {
  //   this.props.router.setRouteLeaveHook(this.props.route, this.routerWillLeave.bind(this))
  // }
 
-  // routerWillLeave(nextLocation) {
-  //   // return false to prevent a transition w/o prompting the user,
-  //   // or return a string to allow the user to decide:
-  //   if(this.state.text)
-  //   return "Are you sure you want to leave without saving?";
-  // }
+  routerWillLeave(nextLocation) {
+    // return false to prevent a transition w/o prompting the user,
+    // or return a string to allow the user to decide:
+    debugger
+    if(this.state.text)
+    return "Are you sure you want to leave without saving?";
+  }
 
   render() {
-    let object = this.props.articles.find(article => {
+    let object = articles.find(article => {
       return article.ref === parseInt(this.props.params.name)
     })
     let {title, body} = object
