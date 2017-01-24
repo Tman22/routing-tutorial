@@ -3,12 +3,9 @@ import { Link } from 'react-router';
 
 
 export const ToDoList = (props) => {
-  let links = todos.map(todo => <Link key={todo.ref} to={'/todolist/'+ todo.ref}>{todo.title}<br/></Link>)
-  console.log(props.location.query)
   return (
     <div>
       ToDoList: <br/>
-      {links}
     </div>
   )
 }

@@ -3,15 +3,9 @@ import { Link } from 'react-router';
 
 export const ToDo = (props) => {
 
-  let object = todos.find(todo => {
-    return todo.ref === parseInt(props.params.todoID)
-  })
-  let {title, body} = object;
-
   return (
     <div>
-      <h2 className='title'> {title}</h2>
-      {body}
+      <h2 className='title'></h2>
     </div>
   )
 }
