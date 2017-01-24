@@ -116,6 +116,7 @@ React Router creates a road map for users to navigate. The URL path designates w
     * this.props.query
     * this.props.children
   * Show a couple neat tricks. Like what happens if you don't have a route?
+  * activeClassName
   * What if I don't want you to leave the page yet? >:D
 
 
