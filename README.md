@@ -47,7 +47,8 @@ render((
       </Route>
     </Route>
   </Router>
-), document.getElementById('root')); ```
+), document.getElementById('root'));
+```
 
 #### ^^^ What!?! ^^^
   React Router just adds helper components like:
