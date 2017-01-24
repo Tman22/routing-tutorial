@@ -1,0 +1,24 @@
+#root {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  text-align: center
+}
+
+.active {
+  background-color: red;
+}
+
+
+.textBox {
+  border: 2px solid black;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.title {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
