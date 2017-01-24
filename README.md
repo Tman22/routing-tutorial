@@ -34,10 +34,6 @@ Let’s take a look at an example url:
 
 What is this telling us about where we are in our app? This tells us we want to visit the root host `localhost:3000`, then view a page about a particular idea, specifically an idea with the ID of 1. With React Router, this is handled by telling our app that when the url matches a pattern of ideas/:someDynamicId, we want to display a particular component that associates with that information. In this case probably an <Idea /> component with the ID of 1.
 
-#### React Router
-
-React Router is the go-to routing library for building React apps built by Michael Jackson (hah) and Ryan Florence. They wanted a way to load routes as they needed them, to fetch data as needed, to incorporate routing with redux and hot module reloading, and they wanted to improve on the mess that was React Router <v4 that apparently nobody (including the React team) liked all that much.
-
 Example of above root:
 ```
 // other dependencies
